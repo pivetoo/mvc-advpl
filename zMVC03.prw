@@ -1,7 +1,7 @@
 #Include "Totvs.ch"
 #Include "fwmvcdef.ch"
 
-Static cTitulo   := "Artistas x CDs x Músicas"
+Static cTitulo   := "Artistas x CDs x MÃºsicas"
 Static cTabPai   := "ZD1"
 Static cTabFilho := "ZD2"
 Static cTabNeto  := "ZD3"
@@ -19,7 +19,7 @@ User Function zMVC03()
     Local oBrowse
     Private aRotina := {}
 
-    // Definição do menu
+    // DefiniÃ§Ã£o do menu
     aRotina := menudef()
 
     // Instanciando o browse
