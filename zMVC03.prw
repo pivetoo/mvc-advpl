@@ -1,7 +1,7 @@
 #Include "Totvs.ch"
 #Include "fwmvcdef.ch"
 
-Static cTitulo   := "Artistas x CDs x Músicas"
+Static cTitulo   := "Artistas x CDs x MÃºsicas"
 Static cTabPai   := "ZD1"
 Static cTabFilho := "ZD2"
 Static cTabNeto  := "ZD3"
@@ -19,7 +19,7 @@ User Function zMVC03()
     Local oBrowse
     Private aRotina := {}
 
-    // Definição do menu
+    // DefiniÃ§Ã£o do menu
     aRotina := menudef()
 
     // Instanciando o browse
@@ -84,7 +84,7 @@ Static Function modeldef()
     // Fazendo o relacionamento (pai e filho)
     oStruFilho:SetProperty("ZD2_ARTIST", MODEL_FIELD_OBRIGAT, .F.)
     aAdd(aRelFilho, {"ZD2_FILIAL", "FWxFIlial('ZD2')"})
-    aAdd(aRelFilho, {"ZD2_ARTISTA", "ZD1_CODIGO"})
+    aAdd(aRelFilho, {"ZD2_ARTIST", "ZD1_CODIGO"})
     oModel:SetRelation("ZD2DETAIL", aRelFilho, ZD2->(IndexKey(1)))
 
     // Fazendo o relacionamento (filho e neto)
