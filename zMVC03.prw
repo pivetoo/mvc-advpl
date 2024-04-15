@@ -84,7 +84,7 @@ Static Function modeldef()
     // Fazendo o relacionamento (pai e filho)
     oStruFilho:SetProperty("ZD2_ARTIST", MODEL_FIELD_OBRIGAT, .F.)
     aAdd(aRelFilho, {"ZD2_FILIAL", "FWxFIlial('ZD2')"})
-    aAdd(aRelFilho, {"ZD2_ARTISTA", "ZD1_CODIGO"})
+    aAdd(aRelFilho, {"ZD2_ARTIST", "ZD1_CODIGO"})
     oModel:SetRelation("ZD2DETAIL", aRelFilho, ZD2->(IndexKey(1)))
 
     // Fazendo o relacionamento (filho e neto)
